@@ -1,0 +1,12 @@
+{
+  "name": "cstack-local",
+  "interface": { "displayName": "cstack local" },
+  "plugins": [
+    {
+      "name": "cstack",
+      "source": { "source": "local", "path": "./cstack" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}
