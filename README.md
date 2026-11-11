@@ -1,5 +1,7 @@
 # cstack
 
+**Codex-native agent routing and rigorous software engineering workflows.**
+
 cstack is a collection of engineering skills and playbooks for Codex. It helps you investigate problems, design changes, write code, review work, and verify results with a consistent, rigorous workflow.
 
 ## Install for Codex
