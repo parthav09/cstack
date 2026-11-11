@@ -1,0 +1,16 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "cstack",
+  "version": "0.2.0",
+  "description": "The complete cstack engineering skill collection for Codex, including charm-mode, design, review, verification, and writing workflows. Adapted from the work of Lauren Tan and contributors.",
+  "author": {
+    "name": "Parthav Joshi"
+  },
+  "license": "MIT",
+  "keywords": [
+    "cstack",
+    "charm-mode",
+    "engineering",
+    "workflow"
+  ]
+}
