@@ -1,8 +1,12 @@
 ---
 name: principle-outcome-oriented-execution
-description: "Apply during planned rewrites and migrations with explicit phase boundaries. Converge on the target architecture; don't preserve smooth intermediate states with throwaway compatibility code."
-disable-model-invocation: true
+description: Apply during planned rewrites and migrations with explicit phase boundaries.
+  Converge on the target architecture; don't preserve smooth intermediate states with
+  throwaway compatibility code.
 ---
+
+Before following this workflow, read the [Codex adapter](../../docs/harness/codex.md). Its tool, model, permission, and integration rules govern the instructions below.
+
 
 # Outcome-Oriented Execution
 

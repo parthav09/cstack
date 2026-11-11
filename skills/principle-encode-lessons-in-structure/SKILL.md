@@ -1,8 +1,12 @@
 ---
 name: principle-encode-lessons-in-structure
-description: "Apply when you catch yourself writing the same instruction a second time, or notice a recurring correction. Encode the rule as a lint, metadata flag, runtime check, or script instead of more text."
-disable-model-invocation: true
+description: Apply when you catch yourself writing the same instruction a second time,
+  or notice a recurring correction. Encode the rule as a lint, metadata flag, runtime
+  check, or script instead of more text.
 ---
+
+Before following this workflow, read the [Codex adapter](../../docs/harness/codex.md). Its tool, model, permission, and integration rules govern the instructions below.
+
 
 # Encode Lessons in Structure
 

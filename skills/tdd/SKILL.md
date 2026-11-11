@@ -1,8 +1,12 @@
 ---
 name: tdd
-description: "Use only when the user explicitly asks for TDD, a failing test, or a regression test, OR when the bug has an obvious cheap local test target. Skip when the test path is unclear, expensive, integration-heavy, or not requested."
-disable-model-invocation: true
+description: Use only when the user explicitly asks for TDD, a failing test, or a
+  regression test, OR when the bug has an obvious cheap local test target. Skip when
+  the test path is unclear, expensive, integration-heavy, or not requested.
 ---
+
+Before following this workflow, read the [Codex adapter](../../docs/harness/codex.md). Its tool, model, permission, and integration rules govern the instructions below.
+
 
 # TDD Bug Fix
 

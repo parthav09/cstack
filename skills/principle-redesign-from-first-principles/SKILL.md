@@ -1,8 +1,10 @@
 ---
 name: principle-redesign-from-first-principles
-description: "Apply when integrating a new requirement into an existing design."
-disable-model-invocation: true
+description: Apply when integrating a new requirement into an existing design.
 ---
+
+Before following this workflow, read the [Codex adapter](../../docs/harness/codex.md). Its tool, model, permission, and integration rules govern the instructions below.
+
 
 # Redesign From First Principles
 

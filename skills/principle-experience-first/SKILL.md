@@ -1,8 +1,12 @@
 ---
 name: principle-experience-first
-description: "Apply when product, UX, or feature-scope tradeoffs come up. Choose user delight over implementation convenience; ship fewer polished features over more rough ones."
-disable-model-invocation: true
+description: Apply when product, UX, or feature-scope tradeoffs come up. Choose user
+  delight over implementation convenience; ship fewer polished features over more
+  rough ones.
 ---
+
+Before following this workflow, read the [Codex adapter](../../docs/harness/codex.md). Its tool, model, permission, and integration rules govern the instructions below.
+
 
 # Experience First
 

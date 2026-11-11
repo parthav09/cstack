@@ -1,8 +1,13 @@
 ---
 name: principle-sequence-verifiable-units
-description: "Apply to multi-step work (sweeps, migrations, runs of similar edits) and to how you stack commits and PRs. Break work into small units that each end in a verifiable state, check each before the next, and order delivery so the sequence proves itself to a reviewer."
-disable-model-invocation: true
+description: Apply to multi-step work (sweeps, migrations, runs of similar edits)
+  and to how you stack commits and PRs. Break work into small units that each end
+  in a verifiable state, check each before the next, and order delivery so the sequence
+  proves itself to a reviewer.
 ---
+
+Before following this workflow, read the [Codex adapter](../../docs/harness/codex.md). Its tool, model, permission, and integration rules govern the instructions below.
+
 
 # Sequence work into verifiable units
 

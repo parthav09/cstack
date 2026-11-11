@@ -1,8 +1,14 @@
+For Codex, enable this plugin through the local marketplace, not settings.json. Treat routine API calls and UI instructions below as integration templates only. Use a real connected scheduler/webhook API or report a blocker. Read the [adapter](../../../../docs/harness/codex.md).
+
 ---
 name: reproduce-and-fix-issues
-description: Reproduce triaged Slack bugs through a configured app-control adapter, verify existing fixes, and open a bounded draft pull request only after before-and-after proof. Use only from the configured Benny repro automation.
-disable-model-invocation: true
+description: Reproduce triaged Slack bugs through a configured app-control adapter,
+  verify existing fixes, and open a bounded draft pull request only after before-and-after
+  proof. Use only from the configured Benny repro automation.
 ---
+
+Before following this workflow, read the [Codex adapter](../../../../docs/harness/codex.md). Its tool, model, permission, and integration rules govern the instructions below.
+
 
 # Reproduce and fix issues
 
@@ -28,8 +34,8 @@ Load the external Benny configuration supplied by the automation. If the config,
 - Existing pull requests or commits switch the run to verify mode. Do not author over them.
 - Use `github.com` pull request links.
 - Keep captures, recordings, logs, and tokens out of source control.
-- Use pstack's `principle-guard-the-context-window` for delegated analysis.
-- Apply pstack's `principle-sequence-verifiable-units`, `principle-fix-root-causes`, and `principle-prove-it-works` through repro, fix, and verification.
+- Use cstack's `principle-guard-the-context-window` for delegated analysis.
+- Apply cstack's `principle-sequence-verifiable-units`, `principle-fix-root-causes`, and `principle-prove-it-works` through repro, fix, and verification.
 
 ## 1. Freeze source coordinates
 
@@ -119,7 +125,7 @@ Use the configured plain Unicode status strings. Keep status text short:
 - Draft pull request opened
 - Fix did not land
 
-Prefer configured Cursor Slack actions. Use `BENNY_SLACK_BOT_TOKEN` only when the user configured it for a narrow missing capability such as editing this one status message. Never expose the token to a worker.
+Prefer configured source host Slack actions. Use `BENNY_SLACK_BOT_TOKEN` only when the user configured it for a narrow missing capability such as editing this one status message. Never expose the token to a worker.
 
 If no operations channel is configured, keep detailed status in the automation run output. Do not substitute a source-channel root message.
 
@@ -158,7 +164,7 @@ Collect:
 
 Inspect screenshots and video. Use read-only parallel workers for code history, test ideas, blast-radius mapping, and media review when useful. Each worker gets a narrow question and the Slack-write prohibition.
 
-Use pstack's `how` skill to trace the action through the repository. Use `why` for regression history and defensive code. Form competing cause hypotheses and identify evidence that would separate them.
+Use cstack's `how` skill to trace the action through the repository. Use `why` for regression history and defensive code. Form competing cause hypotheses and identify evidence that would separate them.
 
 ## 7. Reproduce
 
@@ -259,7 +265,7 @@ Confirm the mechanism with runtime evidence. Eliminate competing hypotheses befo
 
 Fix the root cause with the smallest justified change.
 
-- Invoke pstack's `tdd` skill when there is a cheap local test target, and write the failing test before the fix.
+- Invoke cstack's `tdd` skill when there is a cheap local test target, and write the failing test before the fix.
 - State why TDD was skipped when the path is expensive, unclear, or integration-heavy.
 - Keep unrelated cleanup out.
 - Stop if the change grows beyond the configured effort or risk budget.
@@ -292,7 +298,7 @@ Only after before-and-after proof:
 - Link the configured tracker issue using the tracker's supported pull request syntax.
 - Use the configured public URL form, normally `https://github.com/{owner}/{repo}/pull/{number}`.
 - Include the repro steps, root cause, test result, before and after evidence, and blast-radius checks.
-- Run the pull request text and all Slack updates through pstack's `unslop` skill.
+- Run the pull request text and all Slack updates through cstack's `unslop` skill.
 
 If pull request creation fails, do not claim success. Keep the commit or branch state in the run output and mark operations status `Fix did not land`.
 

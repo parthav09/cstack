@@ -182,7 +182,7 @@ it("attributes a stack wait to the PR whose checks are pending, not the bottom",
     pendingHistory: "omit",
     allowDraft: false,
   });
-  const pendingUcstack = await readSnapshot({
+  const pendingUpstack = await readSnapshot({
     reader: fakeReader({
       fastPath: { kind: "checks", checks: [pendingCheck("upstack-build")] },
     }),
@@ -190,7 +190,7 @@ it("attributes a stack wait to the PR whose checks are pending, not the bottom",
     pendingHistory: "omit",
     allowDraft: false,
   });
-  const decision = selectTierMajorStackDecision([readyBottom, pendingUcstack]);
+  const decision = selectTierMajorStackDecision([readyBottom, pendingUpstack]);
   expect(decision).toMatchObject({
     kind: "waiting",
     frontier: { number: 21 },

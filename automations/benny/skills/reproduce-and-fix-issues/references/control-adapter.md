@@ -1,10 +1,14 @@
+For Codex, enable this plugin through the local marketplace, not settings.json. Treat routine API calls and UI instructions below as integration templates only. Use a real connected scheduler/webhook API or report a blocker. Read the [adapter](../../../../../docs/harness/codex.md).
+
+> Integration template: read the packaged Codex adapter before setup. Hosted scheduler and webhook endpoints are not provided by this plugin.
+
 # Control-adapter contract
 
 Benny does not know how to start or drive every app. The user must configure one control skill or adapter that implements this contract for the target app.
 
 Set its skill name in `control.skill_name`.
 
-Set the completed user-facing feature map path in `control.feature_map_path`. Copy and fill [`feature-map.example.md`](./feature-map.example.md) outside `.cursor/automations/benny/` instead of editing the copied example.
+Set the completed user-facing feature map path in `control.feature_map_path`. Copy and fill [`feature-map.example.md`](./feature-map.example.md) outside `.agents/automations/benny/` instead of editing the copied example.
 
 If the skill, feature map, or a required capability is absent, ambiguous, or incomplete, repro and fix work must fail closed.
 

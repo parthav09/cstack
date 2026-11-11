@@ -1,8 +1,12 @@
 ---
 name: principle-test-behavior-not-implementation
-description: "Apply when you write, change, or keep a test. Assert what the code's users can observe, so that the test fails when that behavior breaks and keeps passing when only the internals change."
-disable-model-invocation: true
+description: Apply when you write, change, or keep a test. Assert what the code's
+  users can observe, so that the test fails when that behavior breaks and keeps passing
+  when only the internals change.
 ---
+
+Before following this workflow, read the [Codex adapter](../../docs/harness/codex.md). Its tool, model, permission, and integration rules govern the instructions below.
+
 
 # Test Behavior, Not Implementation
 

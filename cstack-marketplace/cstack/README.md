@@ -1,22 +1,13 @@
 # cstack for Codex
 
-The full cstack package contains 58 engineering skills, 23 charm-mode playbooks, agent brief templates, scripts, guides, and an optional automation integration pack. Created by Parthav Joshi; adapted from the work of Lauren Tan and contributors. The original MIT license is included.
+cstack is a collection of engineering skills and playbooks for Codex, covering investigation, design, implementation, review, and verification.
 
-Use `$charm-mode` for the complete orchestrated workflow, or invoke a skill directly: `$architect`, `$interrogate`, `$swarm`, `$tdd`, `$how`, `$why`, `$unslop`, `$statechart`, `$cstack-help`, or `$setup-cstack`.
+Use `$charm-mode` for the main workflow, or invoke an individual skill such as `$architect`, `$interrogate`, `$tdd`, `$how`, or `$unslop`. Ask `$cstack-help` for help choosing a skill. See the [skill catalog](docs/catalog.md) and [Codex adapter](docs/harness/codex.md) for details. Some workflows require separately available tools or integrations.
 
-See the [complete skill catalog](docs/catalog.md) and [Codex adapter](docs/harness/codex.md). Each skill loads the adapter. Models inherit the session unless a supported override is explicitly configured. External automation services, webhook provisioning, cross-provider model access, and external tools still require real available integrations; this package does not provision them.
+## Install and update
 
-## Install or update locally
+See the [installation and update instructions](https://github.com/parthav09/cstack#install-for-codex) in the repository README.
 
-From the project root:
+## Credits
 
-```sh
-codex plugin marketplace add ./cstack-marketplace
-codex plugin add cstack@cstack-local
-```
-
-If the marketplace is already registered, run only the plugin-add command to install the updated version. Restart the app and use a new chat to load the updated skill catalog. The CLI on this machine supports plugin installation directly. Installed files are cached; edit this source package, then reinstall to update the cache.
-
-## Validation
-
-Package completeness, skill metadata, local references, and available helper scripts can be checked locally. Installation and discovery can be checked against the installed cache. These checks do not prove every workflow or third-party integration end to end.
+Credit to [Lauren Tan (@poteto)](https://x.com/poteto) and the contributors to [pstack](https://github.com/cursor/plugins/tree/main/pstack), which inspired this project. The original [MIT license](LICENSE) is included.

@@ -1,8 +1,13 @@
 ---
 name: principle-type-system-discipline
-description: "Apply when designing types, reviewing a function signature, or writing code in any statically-typed language. Make illegal states unrepresentable, brand semantic primitives, parse external data at boundaries, exhaust variants, derive from authoritative schemas."
-disable-model-invocation: true
+description: Apply when designing types, reviewing a function signature, or writing
+  code in any statically-typed language. Make illegal states unrepresentable, brand
+  semantic primitives, parse external data at boundaries, exhaust variants, derive
+  from authoritative schemas.
 ---
+
+Before following this workflow, read the [Codex adapter](../../docs/harness/codex.md). Its tool, model, permission, and integration rules govern the instructions below.
+
 
 # Type System Discipline
 

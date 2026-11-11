@@ -1,8 +1,11 @@
 ---
 name: principle-model-the-domain
-description: "Apply when writing stateful logic, or when code branches a lot or repeats a shape assumption across files."
-disable-model-invocation: true
+description: Apply when writing stateful logic, or when code branches a lot or repeats
+  a shape assumption across files.
 ---
+
+Before following this workflow, read the [Codex adapter](../../docs/harness/codex.md). Its tool, model, permission, and integration rules govern the instructions below.
+
 
 # Model the Domain
 

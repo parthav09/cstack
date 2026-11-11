@@ -1,8 +1,12 @@
 ---
 name: principle-attack-the-premise
-description: "Apply when two or more fixes that share one premise have failed the same gate. Write the premise down and test it directly before you write another fix that assumes it."
-disable-model-invocation: true
+description: Apply when two or more fixes that share one premise have failed the same
+  gate. Write the premise down and test it directly before you write another fix that
+  assumes it.
 ---
+
+Before following this workflow, read the [Codex adapter](../../docs/harness/codex.md). Its tool, model, permission, and integration rules govern the instructions below.
+
 
 # Attack the Premise
 

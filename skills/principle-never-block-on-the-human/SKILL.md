@@ -1,8 +1,10 @@
 ---
 name: principle-never-block-on-the-human
-description: "Apply when tempted to ask 'should I do X?' on reversible work."
-disable-model-invocation: true
+description: Apply when tempted to ask 'should I do X?' on reversible work.
 ---
+
+Before following this workflow, read the [Codex adapter](../../docs/harness/codex.md). Its tool, model, permission, and integration rules govern the instructions below.
+
 
 # Never Block on the Human
 

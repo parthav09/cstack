@@ -1,8 +1,12 @@
 ---
 name: principle-fix-root-causes
-description: "Apply when debugging. Trace each symptom back to the first place the system went wrong and fix it there. A guard is a fix only when the state it handles is legitimate."
-disable-model-invocation: true
+description: Apply when debugging. Trace each symptom back to the first place the
+  system went wrong and fix it there. A guard is a fix only when the state it handles
+  is legitimate.
 ---
+
+Before following this workflow, read the [Codex adapter](../../docs/harness/codex.md). Its tool, model, permission, and integration rules govern the instructions below.
+
 
 # Fix Root Causes
 

@@ -37,7 +37,7 @@ Use `candidate` for one or two examples. Use `recurring` after multiple real dis
 - Do not skip when: The comment points to accessibility, focus visibility, keyboard navigation, color contrast, or a component API contract that the PR did not intentionally change.
 - Example signal: Comments about focus outlines, button sizes, spacing, or shared component visual defaults where the owner replies "intentional" or "intended".
 
-### Ucstack or stack-local usage Bugbot cannot see
+### Upstack or stack-local usage Bugbot cannot see
 
 - Confidence: candidate
 - Skip when: Bugbot flags an export, component, helper, or file as unused, and the active forge's PR list and diffs, upper-stack diffs, or PR context show it is used by a later PR in the stack.

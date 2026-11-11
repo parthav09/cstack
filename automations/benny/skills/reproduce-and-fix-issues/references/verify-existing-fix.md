@@ -1,3 +1,7 @@
+For Codex, enable this plugin through the local marketplace, not settings.json. Treat routine API calls and UI instructions below as integration templates only. Use a real connected scheduler/webhook API or report a blocker. Read the [adapter](../../../../../docs/harness/codex.md).
+
+> Integration template: read the packaged Codex adapter before setup. Hosted scheduler and webhook endpoints are not provided by this plugin.
+
 # Verify an existing fix
 
 Use this mode when an open pull request or merged commit plausibly fixes the report.

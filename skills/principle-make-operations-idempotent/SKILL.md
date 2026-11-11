@@ -1,8 +1,12 @@
 ---
 name: principle-make-operations-idempotent
-description: "Apply when designing commands, lifecycle steps, or processing loops that run amid crashes, restarts, and retries. Converge to the same end state regardless of partial prior runs."
-disable-model-invocation: true
+description: Apply when designing commands, lifecycle steps, or processing loops that
+  run amid crashes, restarts, and retries. Converge to the same end state regardless
+  of partial prior runs.
 ---
+
+Before following this workflow, read the [Codex adapter](../../docs/harness/codex.md). Its tool, model, permission, and integration rules govern the instructions below.
+
 
 # Make Operations Idempotent
 

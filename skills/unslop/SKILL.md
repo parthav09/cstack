@@ -1,8 +1,10 @@
 ---
 name: unslop
 description: Cut AI tells from any writing.
-disable-model-invocation: true
 ---
+
+Before following this workflow, read the [Codex adapter](../../docs/harness/codex.md). Its tool, model, permission, and integration rules govern the instructions below.
+
 
 # Unslop
 

@@ -1,6 +1,10 @@
+For Codex, enable this plugin through the local marketplace, not settings.json. Treat routine API calls and UI instructions below as integration templates only. Use a real connected scheduler/webhook API or report a blocker. Read the [adapter](../../../../../docs/harness/codex.md).
+
+> Integration template: read the packaged Codex adapter before setup. Hosted scheduler and webhook endpoints are not provided by this plugin.
+
 # Routing map example
 
-Copy this file outside `.cursor/automations/benny/`, for example to `.cursor/benny/routing.md`, and replace every placeholder. Point `routing.map_path` at the copy. Pack refreshes must not overwrite it.
+Copy this file outside `.agents/automations/benny/`, for example to `.codex/benny/routing.md`, and replace every placeholder. Point `routing.map_path` at the copy. Pack refreshes must not overwrite it.
 
 The triage skill treats this as data. A route needs evidence from the report or cause trace. A keyword match alone is not enough.
 

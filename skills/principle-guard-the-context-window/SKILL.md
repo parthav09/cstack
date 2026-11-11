@@ -1,8 +1,12 @@
 ---
 name: principle-guard-the-context-window
-description: "Apply when context is filling up: large outputs, long files, repeated reads, fan-out planning. Route bulk to subagents; keep summaries in the main thread, not raw payloads."
-disable-model-invocation: true
+description: 'Apply when context is filling up: large outputs, long files, repeated
+  reads, fan-out planning. Route bulk to subagents; keep summaries in the main thread,
+  not raw payloads.'
 ---
+
+Before following this workflow, read the [Codex adapter](../../docs/harness/codex.md). Its tool, model, permission, and integration rules govern the instructions below.
+
 
 # Guard the Context Window
 
