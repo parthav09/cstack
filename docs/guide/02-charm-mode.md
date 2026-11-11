@@ -92,7 +92,7 @@ continue
 keep going until done
 ```
 
-Short works because the playbook holds the structure, and a Custom Mode keeps `/charm-mode` in context on every turn. [Set up cstack](./01-setup.md#run-your-first-task) shows how to start one. Your words carry the intent, and the skill carries the rigor.
+Short follow-ups can work while the current chat retains the context. Start a new chat for a separate task, and invoke `$charm-mode` again when you want to use the workflow.
 
 ## Switch tasks with "new task"
 

@@ -37,12 +37,12 @@ A prompt states the intent and the check for done. The playbook supplies the ste
 
 ## Before stepping away
 
-- Say "im going to bed" or "im stepping away" so the agent stops asking.
-- Write done as checks every iteration can run, and give `/loop` that predicate.
+- Describe what the agent can do without further input and what needs your approval.
+- Write the finish condition as checks the agent can run.
 - Ask for a fresh worktree off a named base.
 - Pre-answer what the agent would stop for, such as "don't ask me before committing".
 - Ask for a decision log to audit later.
-- Give an exit: "if you're truly stuck after a few hours, stop and write up why".
+- Ask for a resume note if the session ends or the work is blocked. Session and permission limits still apply.
 
 ## Steer in one line
 

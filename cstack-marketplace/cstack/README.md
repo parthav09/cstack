@@ -10,4 +10,4 @@ See the [installation and update instructions](https://github.com/parthav09/csta
 
 ## Credits
 
-Credit to [Lauren Tan (@poteto)](https://x.com/poteto) and the contributors to [pstack](https://github.com/cursor/plugins/tree/main/pstack), which inspired this project. The original [MIT license](LICENSE) is included.
+cstack is adapted from work by [Lauren Tan (@poteto)](https://x.com/poteto) and contributors. Thank you for making the original work available. The original [MIT license](LICENSE) is included.

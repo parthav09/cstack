@@ -12,7 +12,7 @@ Start smaller than you think. You don't need many skills on day one, or even thi
 /automate-me
 ```
 
-You don't describe your style, because [`/automate-me`](../../skills/automate-me/SKILL.md) reads it out of your history. It mines your recent transcripts in the active workspace for repeated preferences, in how you like replies, delegation, verification, code, prose, and process, then asks you which patterns are really you. It drafts `.agents/skills/<your-name>-mode/SKILL.md` through source host's built-in `create-skill` flow, runs the draft through [`/unslop`](../../skills/unslop/SKILL.md), and opens a PR from a worktree so you review it like any other change.
+[`$automate-me`](../../skills/automate-me/SKILL.md) can draft a personal mode from the project context and history available to the session. Review its proposed preferences and the resulting skill. If project history is unavailable, provide examples of how you prefer to work.
 
 Run it again whenever your habits drift:
 
@@ -20,7 +20,7 @@ Run it again whenever your habits drift:
 /automate-me update my mode skill with everything since its last edit
 ```
 
-Update mode mines only the history since the skill last changed. It keeps rules you haven't contradicted, revises the ones with new evidence, and adds sections only for new patterns.
+An update uses the relevant history available to the current session and preserves preferences that still apply.
 
 ## Capture a session's lessons with `/reflect`
 
@@ -49,7 +49,7 @@ Human review isn't on the list. A reviewer who must catch the same mistake on ev
 
 It reads recent commits, reverts, review comments, and comments that explain workarounds, then groups the mistakes into classes. A class counts once it has happened twice. It fixes the most frequent classes one commit each, at the highest level that works, and proves each new check fails on a real past mistake. It also keeps a table in the agent instruction file that pairs each rule with what enforces it, so a rule that nothing enforces shows up as a repeat. The reply lists each class with its evidence, the level chosen, and why a higher level didn't work.
 
-Run it with no argument and it finds the classes from history on its own. `/reflect` and `/correct` split the work. `/reflect` improves skills from one session. `/correct` changes the repo so a mistake class can't come back. Pair it with `/architect` when the fix is a new boundary. [Run many projects in parallel](./07-overnight.md#run-many-projects-in-parallel) has a prompt that does both across a whole repo.
+Run it with no argument and it finds the classes from history on its own. `/reflect` and `/correct` split the work. `/reflect` improves skills from one session. `/correct` changes the repo so a mistake class can't come back. Pair it with `/architect` when the fix is a new boundary. [Long-running work](./07-overnight.md) has a prompt that does both across a whole repo.
 
 ## Author a focused skill
 
@@ -59,7 +59,7 @@ When you already know the workflow you want to capture:
 /charm-mode write a skill for verifying database migrations in this repo
 ```
 
-Writing a skill matches the [Authoring or modifying a skill playbook](../../skills/charm-mode/playbooks/authoring-a-skill.md), which routes through source host's built-in `create-skill`, validates the frontmatter and links, and ships the result through the Opening a PR playbook. Agent-facing prose has a higher bar than human prose, because an unhelpful sentence becomes an instruction some future agent follows. Let the playbook hold that bar rather than writing a `SKILL.md` freehand.
+Writing a skill matches the [Authoring or modifying a skill playbook](../../skills/charm-mode/playbooks/authoring-a-skill.md), which uses the available skill-authoring tools and validates the frontmatter and links. Opening a PR depends on your request and the tools and permissions available. Agent-facing prose has a higher bar than human prose, because an unhelpful sentence becomes an instruction some future agent follows. Let the playbook hold that bar rather than writing a `SKILL.md` freehand.
 
 Two special cases have their own generators. A skill that must drive your app and prove behavior is a verification skill, so use [`/create-verification-skill`](../../skills/create-verification-skill/SKILL.md) and [`/maintain-verification-skill`](../../skills/maintain-verification-skill/SKILL.md) instead. A skill that checks a property of your code with a model checker, a proof, or another verifier is a formal verification skill, so use [`/create-formal-verification-skill`](../../skills/create-formal-verification-skill/SKILL.md) and [`/maintain-formal-verification-skill`](../../skills/maintain-formal-verification-skill/SKILL.md). [Verify and ship](./06-verify-and-ship.md#prove-a-property-with-a-formal-verification-skill) covers both kinds.
 

@@ -38,6 +38,6 @@ codex plugin add cstack@cstack-local
 
 ## Credits
 
-Credit to [Lauren Tan (@poteto)](https://x.com/poteto) and the contributors to [pstack](https://github.com/cursor/plugins/tree/main/pstack), which inspired this project.
+cstack is adapted from work by [Lauren Tan (@poteto)](https://x.com/poteto) and contributors. Thank you for making the original work available.
 
 The original [MIT license](LICENSE) is included.
